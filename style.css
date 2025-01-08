@@ -11,13 +11,19 @@ body {
     color: #ddd;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full height of viewport */
 }
 
+/* Center container content */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    text-align: center; /* Center-align text in sections */
 }
 
 /* Navbar */
@@ -25,14 +31,19 @@ body {
     background-color: #1e1e1e;
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center navbar links */
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .logo {
     color: #f4a261;
     font-size: 24px;
     font-weight: bold;
+    margin-right: auto;
 }
 
 .navbar .nav-links {
@@ -58,15 +69,14 @@ header.hero {
     text-align: center;
     color: white;
     margin-bottom: 40px;
+    margin-top: 100px; /* Offset for fixed navbar */
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items in hero */
+    text-align: center;
 }
 
 .hero h1 {
@@ -100,6 +110,7 @@ header.hero {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* Game Info */
@@ -109,6 +120,7 @@ section.game-info {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center text */
 }
 
 .game-info h2 {
@@ -134,6 +146,7 @@ section.game-info {
     margin-bottom: 12px;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center icons and text */
 }
 
 .game-info li img {
@@ -148,6 +161,7 @@ footer {
     margin-top: 40px;
     font-size: 14px;
     color: #888;
+    width: 100%;
 }
 
 footer p {
