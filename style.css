@@ -158,4 +158,18 @@ footer p {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 36px;
-   
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .game-info h2 {
+        font-size: 24px;
+    }
+}
