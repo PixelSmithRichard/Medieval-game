@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Info Input</title>
+    <title>Game Info</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Enter Your Key Information</h1>
+            <h1>Game Info Submission</h1>
+            <p>Share the details of your game</p>
         </header>
-        
+
         <main>
-            <div class="input-container">
-                <label for="key-info">Enter Key Info:</label>
-                <input type="text" id="key-info" placeholder="e.g., Name, Age, etc.">
-                <button onclick="submitInfo()">Submit</button>
-            </div>
-            
-            <div id="result" class="result">
-                <!-- Result will appear here -->
-            </div>
+            <form id="game-form">
+                <input type="text" id="game-name" placeholder="Game Name" required>
+                <textarea id="game-description" placeholder="Game Description" required></textarea>
+                <input type="text" id="game-genre" placeholder="Game Genre" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="result" class="result"></div>
         </main>
 
         <footer>
-            <p>Made with ❤️ by Your Name</p>
+            <p>Made by Your Name</p>
         </footer>
     </div>
 
