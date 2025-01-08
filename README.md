@@ -1,4 +1,4 @@
-Slasher: The Horde Slayer
+# Slasher: The Horde Slayer
 Welcome to Slasher: The Horde Slayer! A fast-paced, action-packed game where you control a powerful warrior battling through endless waves of enemies. Armed with a variety of weapons, you'll slash your way through hordes and conquer foes of all sizes and abilities.
 
 About
